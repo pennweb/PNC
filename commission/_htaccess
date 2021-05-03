@@ -1,0 +1,10 @@
+AuthUserFile /usr/local/etc/httpd/.htpasswd
+AuthGroupFile /dev/null
+AuthName Passworded
+AuthType Basic
+
+<Limit GET>
+require user commission
+require user candidate
+require user admin
+</Limit>
